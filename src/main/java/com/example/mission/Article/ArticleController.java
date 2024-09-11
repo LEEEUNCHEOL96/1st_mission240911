@@ -31,11 +31,10 @@ public class ArticleController {
     }
 
     @GetMapping("/create")
-    @ResponseBody
     public String create(){
-        return "article_detail";
+        return "article_form";
     }
-    
+
     @PostMapping("/create")
     public String create(@RequestParam(value = "title") String title,
                          @RequestParam(value = "content") String content){

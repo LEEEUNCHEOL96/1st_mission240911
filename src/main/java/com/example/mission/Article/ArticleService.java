@@ -30,6 +30,6 @@ public class ArticleService {
         article.setTitle(title);
         article.setContent(content);
         article.setCreateDate(LocalDateTime.now());
-        articleRepository.save(article);
+        this.articleRepository.save(article);
     }
 }
