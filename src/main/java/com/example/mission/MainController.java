@@ -11,4 +11,6 @@ public class MainController {
     public String article (){
         return "article list!!!!!!!!!";
     }
+
+
 }

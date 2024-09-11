@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>article list</title>
+    <title>Article List</title>
 </head>
 <body>
 <table border="1">
@@ -14,7 +14,11 @@
     </tr>
     </thead>
     <tbody>
-    <!-- 여기에 테이블 내용이 들어갑니다 -->
+    <tr th:each="article : ${articleList}">
+        <td th:text="${article.id}"></td>
+        <td th:text="${article.title}"></td>
+        <td th:text="${article.createDate}"></td>
+    </tr>
     </tbody>
 </table>
 </body>
