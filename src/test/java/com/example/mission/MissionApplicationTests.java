@@ -22,6 +22,13 @@ class MissionApplicationTests {
 		a.setCreateDate(LocalDateTime.now());
 		this.articleRepository.save(a);
 
+
+		Article a2 = new Article();
+		a2.setTitle("무엇이");
+		a2.setContent("문제일까요.");
+		a2.setCreateDate(LocalDateTime.now());
+		this.articleRepository.save(a2);
+
 	}
 
 
