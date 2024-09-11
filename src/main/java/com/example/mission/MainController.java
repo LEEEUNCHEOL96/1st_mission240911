@@ -12,5 +12,8 @@ public class MainController {
         return "article list!!!!!!!!!";
     }
 
-
+    @GetMapping("/")
+    public String root(){
+        return "redirect:/article_list";
+    }
 }
