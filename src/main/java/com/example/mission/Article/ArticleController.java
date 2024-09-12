@@ -24,7 +24,7 @@ public class ArticleController {
         return "article_list";
     }
 
-    @GetMapping(value = "/detail/{id}")
+    @GetMapping("/detail/{id}")
     public String detail(Model model, @PathVariable("id") Integer id){
         Article article = this.articleService.getList(id);
         model.addAttribute("article",article);
@@ -33,7 +33,7 @@ public class ArticleController {
     }
 
     @GetMapping("/create")
-    public String create(ArticleForm articleForm){
+    public String create (ArticleForm articleForm){
         return "article_form";
     }
 
