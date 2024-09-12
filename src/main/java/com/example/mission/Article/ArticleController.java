@@ -38,7 +38,7 @@ public class ArticleController {
     }
 
     @PostMapping("/create")
-    public String create(@Valid ArticleForm articleForm,
+    public String articleCreate(@Valid ArticleForm articleForm,
                          BindingResult bindingResult){
         if(bindingResult.hasErrors()){
             return "article_form";
